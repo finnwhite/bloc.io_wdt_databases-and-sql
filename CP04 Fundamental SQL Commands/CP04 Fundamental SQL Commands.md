@@ -19,7 +19,7 @@ INSERT INTO <table> (<column1>, <column2>, ... <columnN>)
   VALUES
   (<row1_value1>, <row1_value2>, ... <row1_valueN>),
   ...
-  (<rowN-value1>, <rowN-value2>, ... <rowN-valueN>);
+  (<rowN_value1>, <rowN_value2>, ... <rowN_valueN>);
 ```
 
 - **updating:** An `UPDATE` statement specifies the table where the data to be modified is stored. The `SET` clause lists one or more column-value pairs containing the new data values, and the `WHERE` clause specifies the criteria for matching the row(s) that should be updated.
