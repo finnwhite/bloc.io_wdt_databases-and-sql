@@ -1,0 +1,33 @@
+CREATE TABLE
+             List of relations
+ Schema |      Name      | Type  |  Owner   
+--------+----------------+-------+----------
+ public | wedding_guests | table | postgres
+(1 row)
+
+ name_first | name_last | has_rsvpd | guest_count | meal_count 
+------------+-----------+-----------+-------------+------------
+(0 rows)
+
+ALTER TABLE
+ name_first | name_last | has_rsvpd | guest_count | meal_count | sent_thankyou 
+------------+-----------+-----------+-------------+------------+---------------
+(0 rows)
+
+ALTER TABLE
+ name_first | name_last | has_rsvpd | guest_count | sent_thankyou 
+------------+-----------+-----------+-------------+---------------
+(0 rows)
+
+ALTER TABLE
+ name_first | name_last | has_rsvpd | guest_count | sent_thankyou | table_number 
+------------+-----------+-----------+-------------+---------------+--------------
+(0 rows)
+
+ALTER TABLE
+ name_first | name_last | has_rsvpd | guest_count | sent_thankyou 
+------------+-----------+-----------+-------------+---------------
+(0 rows)
+
+DROP TABLE
+No relations found.

@@ -1,0 +1,35 @@
+CREATE TABLE
+         List of relations
+ Schema | Name  | Type  |  Owner   
+--------+-------+-------+----------
+ public | inbox | table | postgres
+(1 row)
+
+ id | sender | recipients | subject | body | sent_at | is_read | chain_id 
+----+--------+------------+---------+------+---------+---------+----------
+(0 rows)
+
+INSERT 0 3
+ id  |       sender       |                        recipients                         |         subject         |                                                                                body                                                                                |       sent_at       | is_read | chain_id 
+-----+--------------------+-----------------------------------------------------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------+----------
+ 101 | buddy@supergym.net | finn@supergym.net; wifey@supergym.net; coach@supergym.net | Baby & Me fitness class | Are we on for class tomorrow?                                                                                                                                      | 2018-10-13 09:42:00 | t       |       11
+ 102 | coach@supergym.net | finn@supergym.net; wifey@supergym.net; buddy@supergym.net | Baby & Me fitness class | Absolutely!                                                                                                                                                        | 2018-10-13 09:44:00 | f       |       11
+ 576 | success@bloc.io    | finnwhite@gmail.com                                       | New mentor              | Hi Finn, thanks for writing in!\n\nI have just gone in and reset your mentor pairing so that the next time you log in you will be prompted to choose a new mentor. | 2018-09-05 10:39:00 | t       |       42
+(3 rows)
+
+DELETE 1
+ id  |       sender       |         subject         |       sent_at       | is_read 
+-----+--------------------+-------------------------+---------------------+---------
+ 101 | buddy@supergym.net | Baby & Me fitness class | 2018-10-13 09:42:00 | t
+ 576 | success@bloc.io    | New mentor              | 2018-09-05 10:39:00 | t
+(2 rows)
+
+UPDATE 1
+ id  |       sender       |         subject         |       sent_at       | is_read 
+-----+--------------------+-------------------------+---------------------+---------
+ 101 | buddy@supergym.net | Baby & Me fitness class | 2018-10-13 09:42:00 | t
+ 576 | success@bloc.io    | New mentor              | 2018-09-05 10:39:00 | f
+(2 rows)
+
+DROP TABLE
+No relations found.

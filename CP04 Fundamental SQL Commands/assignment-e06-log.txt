@@ -1,0 +1,35 @@
+CREATE TABLE
+            List of relations
+ Schema |    Name     | Type  |  Owner   
+--------+-------------+-------+----------
+ public | spacecrafts | table | postgres
+(1 row)
+
+ id | name | launch_year | origin | mission | orbiting | is_operating | distance 
+----+------+-------------+--------+---------+----------+--------------+----------
+(0 rows)
+
+INSERT 0 3
+    id     |    name    | launch_year | origin |                                                                                                  mission                                                                                                   | orbiting | is_operating | distance  
+-----------+------------+-------------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+--------------+-----------
+ 2010-020D | Akatsuki   |        2010 | JPN    | Planned observations include cloud and surface imaging from an orbit around the planet with cameras operating in the infrared, visible and UV wavelengths to investigate the complex Venusian meteorology. | Venus    | t            |  25749622
+ 2013-060A | Mangalyaan |        2013 | IND    | The primary objective of the mission is to develop the technologies required for designing, planning, management and operations of an interplanetary mission.                                              | Mars     | t            |  48709288
+ 2011-040A | Juno       |        2011 | USA    | Juno's mission is to measure Jupiter's composition, gravity field, magnetic field, and polar magnetosphere.                                                                                                | Jupiter  | t            | 390693351
+(3 rows)
+
+DELETE 1
+    id     |    name    | origin | orbiting | is_operating | distance  
+-----------+------------+--------+----------+--------------+-----------
+ 2013-060A | Mangalyaan | IND    | Mars     | t            |  48709288
+ 2011-040A | Juno       | USA    | Jupiter  | t            | 390693351
+(2 rows)
+
+UPDATE 1
+    id     |    name    | origin | orbiting | is_operating | distance  
+-----------+------------+--------+----------+--------------+-----------
+ 2011-040A | Juno       | USA    | Jupiter  | t            | 390693351
+ 2013-060A | Mangalyaan | IND    | Mars     | f            |  48709288
+(2 rows)
+
+DROP TABLE
+No relations found.
