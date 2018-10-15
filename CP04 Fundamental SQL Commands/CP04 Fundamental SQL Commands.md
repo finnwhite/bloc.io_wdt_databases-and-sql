@@ -109,6 +109,9 @@ DROP TABLE wedding_guests;
 ```
 
 
+TESTING LOG: [assignment-e04-log.txt](https://github.com/finnwhite/bloc.io_wdt_databases-and-sql/blob/cp04-sql-commands/CP04%20Fundamental%20SQL%20Commands/assignment-e04-log.txt)
+
+
 
 > 5) Write a command to create a new table to hold the books in a library with the columns ISBN, title, author, genre, publishing date, number of copies, and available copies.
 
@@ -152,6 +155,9 @@ UPDATE books
 DELETE FROM books
   WHERE isbn = '978-1-4019-5309-6'; --Becoming supernatural
 ```
+
+
+TESTING LOG: [assignment-e05-log.txt](https://github.com/finnwhite/bloc.io_wdt_databases-and-sql/blob/cp04-sql-commands/CP04%20Fundamental%20SQL%20Commands/assignment-e05-log.txt)
 
 
 
@@ -208,6 +214,9 @@ UPDATE spacecrafts
   SET is_operating = FALSE
   WHERE id = '2013-060A'; --Mangalyaan
 ```
+
+
+TESTING LOG: [assignment-e06-log.txt](https://github.com/finnwhite/bloc.io_wdt_databases-and-sql/blob/cp04-sql-commands/CP04%20Fundamental%20SQL%20Commands/assignment-e06-log.txt)
 
 
 
@@ -268,3 +277,6 @@ UPDATE inbox
   SET is_read = FALSE
   WHERE id = 576;
 ```
+
+
+TESTING LOG: [assignment-e07-log.txt](https://github.com/finnwhite/bloc.io_wdt_databases-and-sql/blob/cp04-sql-commands/CP04%20Fundamental%20SQL%20Commands/assignment-e07-log.txt)
