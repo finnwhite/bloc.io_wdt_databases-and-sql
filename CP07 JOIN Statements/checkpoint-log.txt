@@ -1,0 +1,80 @@
+CREATE TABLE
+COPY 6
+CREATE TABLE
+COPY 5
+           List of relations
+ Schema |    Name    | Type  |  Owner   
+--------+------------+-------+----------
+ public | department | table | postgres
+ public | professor  | table | postgres
+(2 rows)
+
+ id |           name           | department_id 
+----+--------------------------+---------------
+  1 | Albus Dumbledore         |            31
+  2 | Severus Snape            |            32
+  3 | Dolores Umbridge         |            32
+  4 | Bathsheda Babbling       |            34
+  5 | Rubeus Hagrid            |            35
+  6 | Wilhelmina Grubbly-Plank |            35
+(6 rows)
+
+ id |             name              
+----+-------------------------------
+ 31 | Transfiguration
+ 32 | Defence Against the Dark Arts
+ 33 | Flying
+ 34 | Study of Ancient Runes
+ 35 | Care of Magical Creatures
+(5 rows)
+
+           name           |             name              
+--------------------------+-------------------------------
+ Albus Dumbledore         | Transfiguration
+ Severus Snape            | Defence Against the Dark Arts
+ Dolores Umbridge         | Defence Against the Dark Arts
+ Bathsheda Babbling       | Study of Ancient Runes
+ Rubeus Hagrid            | Care of Magical Creatures
+ Wilhelmina Grubbly-Plank | Care of Magical Creatures
+(6 rows)
+
+           name           |             name              
+--------------------------+-------------------------------
+ Albus Dumbledore         | Transfiguration
+ Severus Snape            | Defence Against the Dark Arts
+ Dolores Umbridge         | Defence Against the Dark Arts
+ Bathsheda Babbling       | Study of Ancient Runes
+ Rubeus Hagrid            | Care of Magical Creatures
+ Wilhelmina Grubbly-Plank | Care of Magical Creatures
+(6 rows)
+
+CREATE TABLE
+COPY 6
+            List of relations
+ Schema |     Name     | Type  |  Owner   
+--------+--------------+-------+----------
+ public | compensation | table | postgres
+ public | department   | table | postgres
+ public | professor    | table | postgres
+(3 rows)
+
+ id | professor_id | salary | vacation_days 
+----+--------------+--------+---------------
+  1 |            1 |  64000 |             2
+  2 |            2 |  35000 |             8
+  3 |            3 |  56750 |            10
+  4 |            4 |  42950 |             8
+  5 |            5 |  30000 |             4
+  6 |            6 | 102750 |            22
+(6 rows)
+
+           name           |             name              | vacation_days 
+--------------------------+-------------------------------+---------------
+ Albus Dumbledore         | Transfiguration               |             2
+ Severus Snape            | Defence Against the Dark Arts |             8
+ Dolores Umbridge         | Defence Against the Dark Arts |            10
+ Bathsheda Babbling       | Study of Ancient Runes        |             8
+ Rubeus Hagrid            | Care of Magical Creatures     |             4
+ Wilhelmina Grubbly-Plank | Care of Magical Creatures     |            22
+(6 rows)
+
